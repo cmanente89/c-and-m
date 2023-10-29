@@ -26,10 +26,9 @@ body {
 
 .grid-container {
     background-color: #F1FAEE;
-    width: 95%; /*!si pongo 90% no queda centrado!!! lo arreglé diviendo en 3 con fr enteros*/ 
-    /**corregido*/
+    width: 95%; /*!si pongo 90% no queda centrado!!!*/
+    /**corregido*/ /**lo arreglé diviendo en 3 con fr en valores enteros*/ 
     margin: 0px auto;
-    border: 5px solid black;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 150px auto auto 300px;
@@ -60,16 +59,17 @@ no pude encontrar la forma (también me gustaría que el menu hamburguesa quede 
 }
 
 .navbar-brand img {
-    border: 2px solid black;
+    border: 2px solid #E63946;
+    
 }
 
 
 .navbar-brand img:hover {
 
     content:url(../img/4.png);
-    border: 2px solid #F1FAEE;
+    border: 2px solid #E63946;
     border-radius: 2%;
-    transition: 0.1s;
+    transition: 5s; /*chequear si esto esta funcionando*/
 }
 
 
@@ -96,7 +96,6 @@ no pude encontrar la forma (también me gustaría que el menu hamburguesa quede 
 /* INDEX HERO SECTION*/
 
 .hero {
-    border: 2px solid #E63946;
     grid-area: hero;
     width: 100%;
     height: calc(100vh-150px); /*!acomodar height*/    
@@ -162,7 +161,8 @@ no pude encontrar la forma (también me gustaría que el menu hamburguesa quede 
     padding: 30px;
     margin: 20px;
     font-size: 30px;
-    line-height: 50px;    
+    line-height: 50px;
+    text-align: justify;    
 }
 
 .contenido div img {
@@ -204,6 +204,7 @@ no pude encontrar la forma (también me gustaría que el menu hamburguesa quede 
 .servicios-1 p {
     margin: 20px;
     font-size: 20px;
+    text-align: justify;
 }
 
 
@@ -229,6 +230,7 @@ no pude encontrar la forma (también me gustaría que el menu hamburguesa quede 
 .servicios-2 p {
     margin: 20px;
     font-size: 20px;
+    text-align: justify;
 }
 
 /*FOOTER*/
@@ -261,7 +263,6 @@ no pude encontrar la forma (también me gustaría que el menu hamburguesa quede 
 /*NOSOTROS*//*NOSOTROS*//*NOSOTROS*//*NOSOTROS*//*NOSOTROS*//*NOSOTROS*//*NOSOTROS*//*NOSOTROS*/
 
 .nosotros-container {
-    border: 5px solid black;
     background-color: #F1FAEE;
     width: 90%;
     margin: 0 auto;    
@@ -269,9 +270,10 @@ no pude encontrar la forma (también me gustaría que el menu hamburguesa quede 
 
 
 .nosotros-hero {
-    border: 2px solid #E63946;
+    /* border: 2px solid #E63946; */
     grid-area: hero;
     width: 100%;
+    height: 100%;
 }
 
 .nosotros-hero h1 {
@@ -296,7 +298,6 @@ no pude encontrar la forma (también me gustaría que el menu hamburguesa quede 
 }
 
 .nosotros-main-container {
-    border: 5px solid blue;
     display: flex;
 }
 
@@ -326,6 +327,7 @@ no pude encontrar la forma (también me gustaría que el menu hamburguesa quede 
 .nosotros-milagros p {
     padding: 20px;
     font-size: 25px;
+    text-align: justify;
 }
 
 .nosotros-carlos {
@@ -355,6 +357,7 @@ no pude encontrar la forma (también me gustaría que el menu hamburguesa quede 
 .nosotros-carlos p {
     padding: 20px;
     font-size: 25px;
+    text-align: justify;
 }
 
 /*CONTACTO*//*CONTACTO*//*CONTACTO*//*CONTACTO*//*CONTACTO*//*CONTACTO*//*CONTACTO*//*CONTACTO*/
@@ -399,12 +402,10 @@ no pude encontrar la forma (también me gustaría que el menu hamburguesa quede 
 .servicios-container {
     background-color: #F1FAEE;
     width: 90%;
-    margin: 0 auto;
-    border: 5px solid red;    
+    margin: 0 auto;    
 }
 
 .servicios-container main{
-    border: 5px solid blue;
     width:100%;
     display: flex;
     flex-direction: column;    
@@ -420,7 +421,6 @@ no pude encontrar la forma (también me gustaría que el menu hamburguesa quede 
 
 .servicios-main-grid {
     width: 100%;
-    border: 5px solid black;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 600px 600px 600px;
@@ -433,11 +433,13 @@ no pude encontrar la forma (también me gustaría que el menu hamburguesa quede 
 }
 
 .servicios-main-grid div{
+    border: 2px solid #E63946;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
     flex-direction: column;
     justify-content: center; /*! no es lo que estaba buscando, sino text-align, pero me gusta como quedo*/
+    margin: 10px;
 }
 
 .servicios-main-grid div img{
@@ -451,7 +453,6 @@ no pude encontrar la forma (también me gustaría que el menu hamburguesa quede 
 
 .servicios-main-grid div p{
     padding: 50px;
-
     text-align: justify;
 }
 
