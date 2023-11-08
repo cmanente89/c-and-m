@@ -972,9 +972,6 @@ no pude encontrar la forma (también me gustaría que el menu hamburguesa quede 
         padding: 50px;
 
 }
-    .proyectos-container main div {
-        /* flex-direction: column; */
-    }
 
     .proyectos-container main div a i{
         font-size: 80px;
