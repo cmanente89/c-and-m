@@ -1,0 +1,14 @@
+//EL HEADER ESTA REALIZADO CON BOOTSTRAP, VER EN GENERALES LAS CLASES MODIFICADAS
+
+.encabezado {
+    
+    background-color: #A8DADC;
+    grid-area: header;
+    display: flex;
+    justify-content: space-between;
+    //! align-items: center;  ESTO ERA EL ERROR DEL MENU HAMBURGUESA EN EL INDEX /
+    position: sticky; 
+    top: 0;
+    width: 100%; 
+    height: auto;    
+}

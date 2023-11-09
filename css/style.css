@@ -26,7 +26,7 @@ body {
 
 .grid-container {
     background-color: #F1FAEE;
-    width: 95%; /*!si pongo 90% no queda centrado!!!*/
+    width: 90%; /*!si pongo 90% no queda centrado!!!*/
     /**corregido*/ /**lo arreglé diviendo en 3 con fr en valores enteros*/ 
     margin: 0px auto;
     display: grid;
@@ -371,6 +371,7 @@ no pude encontrar la forma (también me gustaría que el menu hamburguesa quede 
 }
 
 .formulario {
+    
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -384,6 +385,8 @@ no pude encontrar la forma (también me gustaría que el menu hamburguesa quede 
 }
 
 .formulario div {
+    padding: 20px;
+    border:2px solid #E63946;
     margin: 40px;
     text-align: left;
 }
@@ -476,6 +479,7 @@ no pude encontrar la forma (también me gustaría que el menu hamburguesa quede 
 
 .proyectos-container main {
     /* height: 100vh; */
+    /* border: 2px solid #E63946; */
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -507,9 +511,9 @@ no pude encontrar la forma (también me gustaría que el menu hamburguesa quede 
 }
 
 .proyectos-container main div{
-    margin: 50px;
+    margin: 50px 10px 150px 10px;
     /* padding: 150px; */
-    /* border: 1px solid black; */
+    border: 2px solid #E63946;
     display: flex;
     flex-direction: row;
     
@@ -518,7 +522,7 @@ no pude encontrar la forma (también me gustaría que el menu hamburguesa quede 
 
 
 .proyectos-container main div a i{
-    margin:50px;
+    margin:30px;
     font-size: 120px;
     color: #E63946;
 }

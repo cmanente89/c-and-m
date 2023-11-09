@@ -1,0 +1,373 @@
+// INDEX// INDEX// INDEX// INDEX// INDEX// INDEX
+
+.grid-container {
+    background-color: #F1FAEE;
+    width: 90%; /*!si pongo 90% no queda centrado!!!*/
+    /**corregido*/ /**lo arreglé diviendo en 3 con fr en valores enteros*/ 
+    margin: 0px auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 150px auto auto 300px;
+    gap: 10px;
+    grid-template-areas:
+    "header header header"
+    "hero hero hero"    
+    "contenido contenido servicios"
+    "pie pie pie";
+    .encabezado {
+        //hacer en bootstrap o separado
+
+    }
+    .hero {
+        grid-area: hero;
+        width: 100%;
+        height: calc(100vh - 150px); //!acomodar height/
+
+        div{
+            width: 100%;
+            height: 100%;
+            h1{
+                background-image: url(../img/header-1-1920-700.jpg);
+                width: 100%;
+                height: 100%;
+                padding: 150px;
+                color: #F1FAEE;
+                font-family: 'Source Code Pro', monospace;
+                font-size: 50px;
+                letter-spacing: 2px;
+                text-align: center;
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: cover;
+                background-attachment: fixed;    
+                text-shadow: -1px -1px 5px black;
+                span{
+                    font-size:100px;
+
+                }
+            }
+        }
+
+    }
+    .contenido{
+        border: 2px solid #E63946;
+        background-color: #F1FAEE;
+        grid-area: contenido;
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        
+
+        h2{
+            margin: 20px;
+            padding: 30px;
+            font-size: 70px;
+            letter-spacing: 1px;
+            br{
+
+            }
+        }
+        div{
+            display: flex;
+            flex-direction: column-reverse;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            p{
+                padding: 30px;
+                margin: 20px;
+                font-size: 30px;
+                line-height: 50px;
+                text-align: justify;
+
+            }
+            img{
+                margin: 20px; 
+
+            }
+        }
+
+    }
+    .servicios{
+        //ver si corresponde mismo formato para ambos divs
+        //pongo solo uno y sin class
+        border: 2px solid #E63946;
+        background-color: #F1FAEE;
+        grid-area: servicios;
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items:end;
+        div{
+            display: flex;
+            flex-direction: column;
+            justify-content:center;
+            align-items:center;
+            text-align: center;
+            h3{
+                margin: 20px 5px 20px 5px;
+                font-size: 30px;
+
+            }
+            img{
+                width: 300px;
+                height: 300px;
+                margin: 20px;
+
+            }
+            p{
+                margin: 20px;
+                font-size: 20px;
+                text-align: justify;
+
+            }
+        }
+
+    }
+    .pie{
+        //hecho por separado
+
+    }
+}
+
+// NOSOTROS/// NOSOTROS/// NOSOTROS/// NOSOTROS/// NOSOTROS/
+
+.nosotros-container{
+    background-color: #F1FAEE;
+    width: 90%;
+    margin: 0 auto;  
+    .nosotros-hero{
+        /* border: 2px solid #E63946; */
+        grid-area: hero;
+        width: 100%;
+        height: 100%;
+    
+        div{
+            h1{
+                background-image: url(../img/header-1-1920-700.jpg);
+                width: 100%;
+                height: 100%;
+                padding: 150px;
+                color: #F1FAEE;
+                font-family: 'Source Code Pro', monospace;
+                font-size: 120px;
+                letter-spacing: 2px;
+                text-align: center;
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: cover;
+                background-attachment: fixed;    
+                text-shadow: -1px -1px 5px black;
+                span{
+                    font-size: 100px;
+                    //hay un elemento br
+                }
+            }
+        }
+    }
+    
+    .nosotros-main-container{
+        //hay dos sections iguales con clases,
+        // ver si no son iguales, lo hago
+        display: flex; 
+        section{
+            border: 2px solid #E63946;    
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+            margin: 20px;
+            text-align: center;
+            img{
+                padding: 20px;
+                height:400px;
+                width: 400px;
+                
+    
+            }
+            h2{
+                padding-top: 30px;
+                font-size: 50px;
+                letter-spacing: 1px;
+    
+            }
+            p{
+                padding: 20px;
+                font-size: 25px;
+                text-align: justify;
+                
+            }
+        }
+    }
+}
+
+// SERVICIOS/// SERVICIOS/// SERVICIOS/// SERVICIOS/// SERVICIOS/
+
+
+
+.servicios-container{
+    background-color: #F1FAEE;
+    width: 90%;
+    margin: 0 auto;   
+    main{
+        width:100%;
+        display: flex;
+        flex-direction: column;  
+        h1{
+            background-image: url(../img/header-1-1920-700.jpg);
+            width: 100%;
+            height: 100%;
+            padding: 150px;
+            color: #F1FAEE;
+            font-family: 'Source Code Pro', monospace;
+            font-size: 120px;
+            letter-spacing: 2px;
+            text-align: center;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            background-attachment: fixed;    
+            text-shadow: -1px -1px 5px black;
+
+        }
+
+        //ver si todos los estilos aplican para todo
+        .servicios-main-grid{
+            width: 100%;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 600px 600px 600px;
+            gap: 20px;
+            /* padding: 20px;     */
+            .servicio-descripcion{
+                border: 2px solid #E63946;
+                display: flex;
+                justify-content: space-evenly;
+                align-items: center;
+                flex-direction: column;
+                justify-content: center; /*! no es lo que estaba buscando, sino text-align, pero me gusta como quedo*/
+                margin: 10px;
+                h2{
+                    font-size: 60px;
+                    margin: 10px;
+                    padding:10px;
+
+                }
+                p{
+                    padding: 50px;
+                    text-align: justify;
+
+                }
+            .servicio-img{
+                height: 500px;
+                width: 500px;
+
+            }       
+
+            }
+        }
+    }
+}
+
+// PROYECTOS/// PROYECTOS/// PROYECTOS/// PROYECTOS/// PROYECTOS/
+
+.proyectos-container{
+    background-color: #F1FAEE;
+    width: 90%;
+    margin: 0 auto;
+    main{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        // height: 100vh; /
+        // border: 2px solid #E63946; /
+        h1{
+            background-image: url(../img/header-1-1920-700.jpg);
+            width: 100%;
+            height: 50%;
+            padding: 150px;
+            color: #F1FAEE;
+            font-family: 'Source Code Pro', monospace;
+            font-size: 120px;
+            letter-spacing: 2px;
+            text-align: center;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            background-attachment: fixed;    
+            text-shadow: -1px -1px 5px black;
+
+        }
+        h2{
+            padding: 50px 150px 0 150px;
+            text-align: center;
+
+        }
+        div{
+            margin: 50px 10px 150px 10px;
+            /* padding: 150px; */
+            border: 2px solid #E63946;
+            display: flex;
+            flex-direction: row;
+            a{
+                i{
+                    margin:30px;
+                    font-size: 120px;
+                    color: #E63946;
+                    &:hover{
+                        color: #1D3557;
+                    }
+
+                }
+            }
+        }
+    }
+}
+
+//CONTACTO///CONTACTO///CONTACTO///CONTACTO///CONTACTO/
+
+.contacto-container{
+    background-color: #F1FAEE;
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    main{
+        .formulario{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+            h1{
+                font-family: 'Source Code Pro', monospace;
+                font-size: 50px;
+                margin: 40px;
+
+            }
+            div{
+                padding: 20px;
+                border:2px solid #E63946;
+                margin: 40px;
+                text-align: left;
+                form{
+                    label{
+                        margin: 0;
+
+                    }
+                    input{
+                        margin: 10px;
+
+                    }
+
+                }
+
+            }
+
+        }
+    }
+}

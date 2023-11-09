@@ -1,0 +1,62 @@
+// RESET /// RESET /// RESET /// RESET /// RESET /
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+// FONTS/// FONTS/// FONTS/// FONTS/// FONTS/// FONTS/
+
+ // Source code
+
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,300;0,600;0,900;1,300;1,600;1,900&display=swap');
+
+ // Roboto
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&display=swap');
+
+// BODY/// BODY/// BODY/// BODY/// BODY/
+
+body {
+    background-color: #F1FAEE;
+    font-family: 'Roboto', sans-serif;
+    
+}
+
+//HEADER///HEADER///HEADER///HEADER///HEADER///HEADER///HEADER/
+
+.navbar-brand img {
+    border: 2px solid #E63946;
+    
+}
+
+
+.navbar-brand img:hover {
+
+    content:url(../img/4.png);
+    border: 2px solid #E63946;
+    border-radius: 2%;
+    transition: 5s; //chequear si esto esta funcionando/
+}
+
+
+.nav-link {
+    color: #E63946;
+    margin: 10px;
+    font-size: 20px;
+    border: 2px solid #E63946;
+    text-shadow: -1px -1px 1px  #F1FAEE;
+    border-radius: 2%;
+    background-color: #A8DADC;
+}
+
+.nav-link:hover {
+    background-color:#1D3557;
+    text-shadow: -2px -2px 1px  #E63946;
+    color: #F1FAEE;
+}
+
+.navbar-nav {
+    --bs-nav-link-hover-color:#E63946;   
+}
