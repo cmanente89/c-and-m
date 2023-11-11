@@ -428,3 +428,62 @@ body {
     font-size: 25px; }
     .grid-container .hero div h1 span {
       font-size: 35px; } }
+
+@media screen and (max-width: 1090px) {
+  .nosotros-container .nosotros-hero div h1 {
+    padding: 75px;
+    font-size: 70px; }
+    .nosotros-container .nosotros-hero div h1 span {
+      font-size: 80px; }
+  .nosotros-container .nosotros-main-container {
+    flex-direction: column; }
+  .nosotros-container .pie .ubicacion iframe {
+    width: 150px;
+    height: 150px; }
+  .nosotros-container .pie .otro-contacto {
+    font-size: 15px;
+    line-height: 30px; }
+  .nosotros-container .pie .redes i {
+    font-size: 35px; } }
+
+@media screen and (max-width: 990px) {
+  .nosotros-container .nosotros-hero div h1 {
+    padding: 75px;
+    font-size: 80px; }
+    .nosotros-container .nosotros-hero div h1 span {
+      font-size: 70px; } }
+
+@media screen and (max-width: 700px) {
+  .nosotros-container .nosotros-hero div h1 {
+    padding: 50px;
+    font-size: 60px; }
+    .nosotros-container .nosotros-hero div h1 span {
+      font-size: 40px; }
+  .nosotros-container .pie {
+    padding: 10px;
+    flex-direction: column; }
+    .nosotros-container .pie .ubicacion {
+      display: none; }
+    .nosotros-container .pie .otro-contacto {
+      font-size: 20px;
+      line-height: 20px; } }
+
+@media screen and (max-width: 530px) {
+  .nosotros-container .nosotros-hero div h1 {
+    padding: 25px;
+    font-size: 55px; }
+    .nosotros-container .nosotros-hero div h1 span {
+      font-size: 35px; }
+  .nosotros-container .nosotros-main-container section img {
+    height: 250px;
+    width: 250px; }
+  .nosotros-container .nosotros-main-container section h2 {
+    padding-top: 20px;
+    font-size: 40px; }
+  .nosotros-container .nosotros-main-container section p {
+    font-size: 20px; }
+  .nosotros-container .pie .otro-contacto {
+    font-size: 15px;
+    line-height: 30px; }
+  .nosotros-container .pie .redes i {
+    font-size: 50px; } }

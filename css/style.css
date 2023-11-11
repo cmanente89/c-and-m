@@ -718,6 +718,8 @@ no pude encontrar la forma (también me gustaría que el menu hamburguesa quede 
         height: 240px;   
     }
 
+    /*! en Sass no utilizar dos clases para el div, modificar todo desde el div directamente*/
+
     .servicios-1 h3 {
         
         font-size: 15px;

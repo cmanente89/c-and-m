@@ -220,12 +220,144 @@
                     font-size: 25px;
                     span{
                         font-size: 35px;
-
                     }
                 }
             }
         }
     }
 }
+
+//CONTACTO///CONTACTO///CONTACTO///CONTACTO///CONTACTO/
+
+//No utilicé media queries en la página contactos (aún)/
+
+//NOSOTROS///NOSOTROS///NOSOTROS///NOSOTROS///NOSOTROS/
+
+@media screen and (max-width:1090px){
+    .nosotros-container{
+        .nosotros-hero{
+            div{
+                h1{
+                    padding: 75px;
+                    font-size: 70px;
+                    span{
+                        font-size:80px;
+                    }
+                }
+            }
+        }
+        .nosotros-main-container{
+            flex-direction:column;   
+        }
+        .pie{
+            .ubicacion{
+                iframe{
+                    width: 150px;
+                    height: 150px;
+                }
+            }
+            .otro-contacto{
+                font-size: 15px;
+                line-height: 30px;
+            }
+            .redes{
+                i{
+                    font-size: 35px;
+                }
+            }
+        }    
+    }
+}
+
+
+@media screen and (max-width:990px){
+    .nosotros-container{
+        .nosotros-hero{
+            div{
+                h1{
+                    padding: 75px;
+                    font-size: 80px;
+                    span{
+                        font-size: 70px;
+                    }
+                }            
+            }
+        }
+    }
+}
+
+@media screen and (max-width:700px){
+    .nosotros-container{
+        .nosotros-hero{
+            div{
+                h1{
+                    padding: 50px;
+                    font-size: 60px;
+                    span{
+                        font-size: 40px;
+                    }
+                }            
+            }
+            
+        }
+        .pie{
+            padding: 10px;  
+            flex-direction: column; 
+            .ubicacion{
+                display: none;
+
+            }
+            .otro-contacto{
+                font-size: 20px;
+                line-height: 20px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width:530px){
+    .nosotros-container{
+        .nosotros-hero{
+            div{
+                h1{
+                    padding: 25px;
+                    font-size: 55px;
+                    span{
+                        font-size: 35px;
+                    }
+                }            
+            }
+        }
+        .nosotros-main-container{
+            section{
+                img{
+                    height: 250px;
+                    width: 250px;
+                }
+                h2{
+                    padding-top: 20px;
+                    font-size: 40px;
+                }
+                p{
+                    font-size: 20px;
+                }
+            }
+                        
+        }
+        .pie{
+            .otro-contacto{
+                font-size: 15px;
+                line-height: 30px;
+            }
+            .redes{
+                i{
+                    font-size: 50px;
+                }
+            }
+        }
+    }
+}
+
+
     
         
