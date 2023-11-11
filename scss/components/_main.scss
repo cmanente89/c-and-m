@@ -7,13 +7,17 @@
     margin: 0px auto;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 150px auto auto 300px;
+    grid-template-rows: auto auto auto 300px;
     gap: 10px;
     grid-template-areas:
     "header header header"
     "hero hero hero"    
     "contenido contenido servicios"
     "pie pie pie";
+    .encabezado{
+        top: 0;
+        width: 100%;
+    }
     .hero {
         grid-area: hero;
         width: 100%;

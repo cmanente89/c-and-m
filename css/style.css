@@ -905,11 +905,10 @@ no pude encontrar la forma (también me gustaría que el menu hamburguesa quede 
 }
 
 @media screen and (max-width:600px){
-    .servicios-container main h1 {
+    /* .servicios-container main h1 {
         font-size: 50px;
-        /*anidar*/
-                
-    }
+        esto se puede quitar                
+    } */
     .servicios-main-grid .servicio-descripcion h2{
         font-size:40px;
     }

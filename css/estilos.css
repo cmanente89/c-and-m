@@ -122,9 +122,12 @@ body {
   margin: 0px auto;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: 150px auto auto 300px;
+  grid-template-rows: auto auto auto 300px;
   gap: 10px;
   grid-template-areas: "header header header" "hero hero hero"     "contenido contenido servicios" "pie pie pie"; }
+  .grid-container .encabezado {
+    top: 0;
+    width: 100%; }
   .grid-container .hero {
     grid-area: hero;
     width: 100%;
@@ -617,6 +620,45 @@ body {
   .proyectos-container .pie .redes i {
     font-size: 50px; } }
 
-@media screen and (max-width: 990) {
+@media screen and (max-width: 990px) {
+  .servicios-container .encabezado nav div a img {
+    height: 53px;
+    width: 200px; }
+  .servicios-container .encabezado nav div div div a {
+    text-align: center;
+    width: 150px; }
   .servicios-container main h1 {
-    font-size: 80px; } }
+    font-size: 80px; }
+  .servicios-container .pie .ubicacion iframe {
+    width: 150px;
+    height: 150px; }
+  .servicios-container .pie .otro-contacto {
+    font-size: 15px;
+    line-height: 30px; }
+  .servicios-container .pie .redes i {
+    font-size: 35px; } }
+
+@media screen and (max-width: 725px) {
+  .servicios-container main h1 {
+    font-size: 60px;
+    padding: 50px; }
+  .servicios-container .pie {
+    padding: 10px;
+    flex-direction: column; }
+    .servicios-container .pie .ubicacion {
+      display: none; }
+    .servicios-container .pie .otro-contacto {
+      font-size: 20px;
+      line-height: 20px; } }
+
+@media screen and (max-width: 550px) {
+  .servicios-container main h1 {
+    font-size: 40px;
+    padding: 50px; } }
+
+@media screen and (max-width: 525px) {
+  .servicios-container .pie .otro-contacto {
+    font-size: 15px;
+    line-height: 30px; }
+  .servicios-container .pie .redes i {
+    font-size: 50px; } }

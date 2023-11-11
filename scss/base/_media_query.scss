@@ -561,27 +561,101 @@
 //SERVICIOS///SERVICIOS///SERVICIOS///SERVICIOS///SERVICIOS///SERVICIOS/
 
 //ver "_Generales.scss" para la anidación del Grid/
-//anido aquí el header, footer y el h1/
+//anido aquí variaciones en header, footer y el h1/
 
-@media screen and (max-width:990){
-    //no funciona/
-    .servicios-container{    
+@media screen and (max-width:990px){
+    .servicios-container{
+        .encabezado{
+            nav{
+                div{
+                    a{
+                        img{
+                            height: 53px; 
+                            width: 200px;                        
+                        }
+                    }
+                    div{
+                        div{
+                            a{
+                                text-align: center;
+                                width:150px;
+                            }
+                        }
+                    }    
+                }
+            }
+        }    
         main{        
             h1{
                 font-size: 80px;   
             }
         }
-    }
-    
+        .pie{
+            .ubicacion{
+                iframe{
+                    width: 150px;
+                    height: 150px;
+                }
+            }
+            .otro-contacto{
+                font-size: 15px;
+                line-height: 30px;
+            }
+            .redes{
+                i{
+                    font-size: 35px;
+                }
+            }
+        }
+    }    
 }
-    
 
-    
+@media screen and (max-width:725px){
+    .servicios-container{
+        main{
+            h1 {
+                font-size: 60px;
+                padding:50px;               
+            }
+        }
+        .pie{
+            padding: 10px;  
+            flex-direction: column; 
+            .ubicacion{
+                display: none;
+            }
+            .otro-contacto{
+                font-size: 20px;
+                line-height: 20px;
+            }
+        }    
+    }      
+}
 
 
+@media screen and (max-width:550px){
+    .servicios-container{
+        main{
+            h1 {
+                font-size: 40px;
+                padding:50px;               
+            }
+        }    
+    }      
+}
 
-
-
-
-    
-        
+@media screen and (max-width: 525px){
+    .servicios-container{
+        .pie{
+            .otro-contacto{
+                font-size: 15px;
+                line-height: 30px;
+            }
+            .redes{
+                i{
+                    font-size: 50px;
+                }
+            }
+        }
+    }
+}
