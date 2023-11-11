@@ -36,6 +36,73 @@ body {
 .navbar-nav {
   --bs-nav-link-hover-color:#E63946; }
 
+.servicios-main-grid {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 600px 600px 600px;
+  gap: 20px;
+  /* padding: 20px;     */ }
+
+.servicios-main-grid div {
+  border: 2px solid #E63946;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  /*! no es lo que estaba buscando, sino text-align, pero me gusta como quedo*/
+  margin: 10px; }
+
+.servicios-main-grid div img {
+  height: 500px;
+  width: 500px; }
+
+.servicios-main-grid div h2 {
+  font-size: 60px;
+  margin: 10px;
+  padding: 10px; }
+
+.servicios-main-grid div p {
+  padding: 50px;
+  text-align: justify; }
+
+@media screen and (max-width: 1250px) {
+  .servicios-main-grid {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+  .servicios-main-grid div {
+    border: 0; }
+  .servicios-main-grid .servicio-descripcion {
+    border: 2px solid #E63946;
+    width: 90%; }
+  .servicios-main-grid .servicio-imagen {
+    border: 2px solid #E63946;
+    margin: 40px;
+    width: 90%;
+    padding: 20px; } }
+
+@media screen and (max-width: 725px) {
+  .servicios-main-grid .servicio-descripcion h2 {
+    font-size: 50px; } }
+
+@media screen and (max-width: 600px) {
+  .servicios-main-grid .servicio-descripcion h2 {
+    font-size: 40px; }
+  .servicios-main-grid .servicio-imagen img {
+    width: 325px;
+    height: 325px; } }
+
+@media screen and (max-width: 550px) {
+  .servicios-main-grid .servicio-descripcion h2 {
+    font-size: 40px; }
+  .servicios-main-grid .servicio-imagen img {
+    width: 325px;
+    height: 325px; } }
+
 .encabezado {
   background-color: #A8DADC;
   grid-area: header;
@@ -210,32 +277,6 @@ body {
       background-size: cover;
       background-attachment: fixed;
       text-shadow: -1px -1px 5px black; }
-    .servicios-container main .servicios-main-grid {
-      width: 100%;
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      grid-template-rows: 600px 600px 600px;
-      gap: 20px;
-      /* padding: 20px;     */ }
-      .servicios-container main .servicios-main-grid .servicio-descripcion {
-        border: 2px solid #E63946;
-        display: flex;
-        justify-content: space-evenly;
-        align-items: center;
-        flex-direction: column;
-        justify-content: center;
-        /*! no es lo que estaba buscando, sino text-align, pero me gusta como quedo*/
-        margin: 10px; }
-        .servicios-container main .servicios-main-grid .servicio-descripcion h2 {
-          font-size: 60px;
-          margin: 10px;
-          padding: 10px; }
-        .servicios-container main .servicios-main-grid .servicio-descripcion p {
-          padding: 50px;
-          text-align: justify; }
-        .servicios-container main .servicios-main-grid .servicio-descripcion .servicio-img {
-          height: 500px;
-          width: 500px; }
 
 .proyectos-container {
   background-color: #F1FAEE;
@@ -361,7 +402,7 @@ body {
   .grid-container .pie .redes i {
     font-size: 35px; } }
 
-@media screen and (max-width: 991px) {
+@media screen and (max-width: 990px) {
   .grid-container .encabezado nav div a img {
     height: 53px;
     width: 200px; }
@@ -375,10 +416,6 @@ body {
     grid-template-rows: 150px auto auto auto 300px;
     gap: 5px;
     grid-template-areas: "header header" "hero hero"     "contenido contenido" "servicios servicios" "pie pie"; }
-    .grid-container .encabezado nav div div div a {
-      font-size: 15px;
-      width: 100px;
-      text-align: center; }
     .grid-container .hero div h1 {
       padding: 50px;
       font-size: 30px; }
@@ -429,6 +466,39 @@ body {
     .grid-container .hero div h1 span {
       font-size: 35px; } }
 
+@media screen and (max-width: 990px) {
+  .contacto-container .encabezado nav div a img {
+    height: 53px;
+    width: 200px; }
+  .contacto-container .encabezado nav div div div a {
+    text-align: center;
+    width: 150px; }
+  .contacto-container .pie .ubicacion iframe {
+    width: 150px;
+    height: 150px; }
+  .contacto-container .pie .otro-contacto {
+    font-size: 15px;
+    line-height: 30px; }
+  .contacto-container .pie .redes i {
+    font-size: 35px; } }
+
+@media screen and (max-width: 805px) {
+  .contacto-container .pie {
+    padding: 10px;
+    flex-direction: column; }
+    .contacto-container .pie .ubicacion {
+      display: none; }
+    .contacto-container .pie .otro-contacto {
+      font-size: 20px;
+      line-height: 20px; } }
+
+@media screen and (max-width: 525px) {
+  .contacto-container .pie .otro-contacto {
+    font-size: 15px;
+    line-height: 30px; }
+  .contacto-container .pie .redes i {
+    font-size: 50px; } }
+
 @media screen and (max-width: 1090px) {
   .nosotros-container .nosotros-hero div h1 {
     padding: 75px;
@@ -447,6 +517,12 @@ body {
     font-size: 35px; } }
 
 @media screen and (max-width: 990px) {
+  .nosotros-container .encabezado nav div a img {
+    height: 53px;
+    width: 200px; }
+  .nosotros-container .encabezado nav div div div a {
+    text-align: center;
+    width: 150px; }
   .nosotros-container .nosotros-hero div h1 {
     padding: 75px;
     font-size: 80px; }
@@ -487,3 +563,60 @@ body {
     line-height: 30px; }
   .nosotros-container .pie .redes i {
     font-size: 50px; } }
+
+@media screen and (max-width: 400px) {
+  .nosotros-container .nosotros-hero div h1 {
+    padding: 15px;
+    font-size: 50px; }
+    .nosotros-container .nosotros-hero div h1 span {
+      font-size: 30px; } }
+
+@media screen and (max-width: 990px) {
+  .proyectos-container .encabezado nav div a img {
+    height: 53px;
+    width: 200px; }
+  .proyectos-container .encabezado nav div div div a {
+    text-align: center;
+    width: 150px; }
+  .proyectos-container main h1 {
+    font-size: 80px; }
+  .proyectos-container .pie .ubicacion iframe {
+    width: 150px;
+    height: 150px; }
+  .proyectos-container .pie .otro-contacto {
+    font-size: 15px;
+    line-height: 30px; }
+  .proyectos-container .pie .redes i {
+    font-size: 35px; } }
+
+@media screen and (max-width: 700px) {
+  .proyectos-container main h1 {
+    padding: 50px;
+    font-size: 60px; }
+  .proyectos-container main h2 {
+    padding: 60px; }
+  .proyectos-container .pie {
+    padding: 10px;
+    flex-direction: column; }
+    .proyectos-container .pie .ubicacion {
+      display: none; }
+    .proyectos-container .pie .otro-contacto {
+      font-size: 20px;
+      line-height: 20px; } }
+
+@media screen and (max-width: 525px) {
+  .proyectos-container main h1 {
+    padding-left: 0;
+    padding-right: 0;
+    font-size: 50px; }
+  .proyectos-container main div a i {
+    font-size: 80px; }
+  .proyectos-container .pie .otro-contacto {
+    font-size: 15px;
+    line-height: 30px; }
+  .proyectos-container .pie .redes i {
+    font-size: 50px; } }
+
+@media screen and (max-width: 990) {
+  .servicios-container main h1 {
+    font-size: 80px; } }

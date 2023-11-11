@@ -60,3 +60,97 @@ body {
 .navbar-nav {
     --bs-nav-link-hover-color:#E63946;   
 }
+
+//!GRILLA DE LA PAGINA "SERVICIOS.HTML (se rompe al anidar,/ 
+//!Gabi dijo en el after que podíamos hacerla sin anidar, igual sus respectivas media queries)/
+
+.servicios-main-grid {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 600px 600px 600px;
+    gap: 20px;
+    /* padding: 20px;     */
+}
+
+
+
+.servicios-main-grid div{
+    border: 2px solid #E63946;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center; /*! no es lo que estaba buscando, sino text-align, pero me gusta como quedo*/
+    margin: 10px;
+}
+
+.servicios-main-grid div img{
+    height: 500px;
+    width: 500px;
+}
+
+.servicios-main-grid div h2{
+    font-size: 60px;
+    margin: 10px;
+    padding:10px;
+}
+
+.servicios-main-grid div p{
+    padding: 50px;
+    text-align: justify;
+}
+
+//MEDIA QUERIES SERVICIOS///MEDIA QUERIES SERVICIOS///MEDIA QUERIES SERVICIOS/
+
+@media screen and (max-width:1250px){
+    .servicios-main-grid {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;        
+    }
+    .servicios-main-grid div {
+        border:0;
+    }
+    .servicios-main-grid .servicio-descripcion{
+        border: 2px solid #E63946;
+        width: 90%;        
+    }
+    .servicios-main-grid .servicio-imagen{
+        border:2px solid #E63946;        
+        margin: 40px;
+        width: 90%;
+        padding: 20px;        
+    }
+}
+
+@media screen and (max-width:725px){
+    .servicios-main-grid .servicio-descripcion h2{
+        font-size:50px;
+    }
+}
+@media screen and (max-width:600px){
+    .servicios-main-grid .servicio-descripcion h2{
+        font-size:40px;
+    }
+    .servicios-main-grid .servicio-imagen img{
+        width:325px;
+        height: 325px;;
+    }
+}
+@media screen and (max-width:550px){
+    .servicios-main-grid .servicio-descripcion h2{
+        font-size:40px;
+        
+    }
+    .servicios-main-grid .servicio-imagen img{
+        width:325px;
+        height: 325px;
+            
+    }
+
+}
+
+

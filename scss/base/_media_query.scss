@@ -74,7 +74,7 @@
     }
 }
 
-@media screen and (max-width:991px){
+@media screen and (max-width:990px){
     .grid-container{
         .encabezado{
             nav{
@@ -110,21 +110,7 @@
         "contenido contenido"
         "servicios servicios"
         "pie pie";
-        .encabezado{
-            nav{
-                div{
-                    div{
-                        div{
-                            a{
-                                font-size:15px;
-                                width:100px;
-                                text-align: center;
-                            }
-                        }
-                    }
-                }
-            }
-        }
+        
         .hero{
             div{
                 h1{
@@ -141,7 +127,6 @@
             flex-direction: column; 
             .ubicacion{
                 display: none;
-
             }
             .otro-contacto{
                 font-size: 20px;
@@ -163,9 +148,7 @@
                     } 
                 }
             }
-
         }
-
         .contenido{
             h2{
                 margin: 5px;
@@ -229,7 +212,82 @@
 
 //CONTACTO///CONTACTO///CONTACTO///CONTACTO///CONTACTO/
 
-//No utilicé media queries en la página contactos (aún)/
+@media screen and (max-width:990px){
+    .contacto-container{
+        .encabezado{
+            nav{
+                div{
+                    a{
+                        img{
+                            height: 53px; 
+                            width: 200px;                        
+                        }
+                    }
+                    div{
+                        div{
+                            a{
+                                text-align: center;
+                                width:150px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .pie{
+            .ubicacion{
+                iframe{
+                    width: 150px;
+                    height: 150px;
+                }
+            }
+            .otro-contacto{
+                font-size: 15px;
+                line-height: 30px;
+            }
+            .redes{
+                i{
+                    font-size: 35px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:805px){
+    .contacto-container{
+        .pie{
+            padding: 10px;  
+            flex-direction: column; 
+            .ubicacion{
+                display: none;
+        
+            }
+            .otro-contacto{
+                font-size: 20px;
+                line-height: 20px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 525px){
+    .contacto-container{
+        .pie{
+            .otro-contacto{
+                font-size: 15px;
+                line-height: 30px;
+            }
+            .redes{
+                i{
+                    font-size: 50px;
+                }
+            }
+        }
+    }
+}
+
+
 
 //NOSOTROS///NOSOTROS///NOSOTROS///NOSOTROS///NOSOTROS/
 
@@ -272,6 +330,26 @@
 
 @media screen and (max-width:990px){
     .nosotros-container{
+        .encabezado{
+            nav{
+                div{
+                    a{
+                        img{
+                            height: 53px; 
+                            width: 200px;                        
+                        }
+                    }
+                    div{
+                        div{
+                            a{
+                                text-align: center;
+                                width:150px;
+                            }
+                        }
+                    }    
+                }
+            }
+        }
         .nosotros-hero{
             div{
                 h1{
@@ -305,7 +383,6 @@
             flex-direction: column; 
             .ubicacion{
                 display: none;
-
             }
             .otro-contacto{
                 font-size: 20px;
@@ -357,6 +434,153 @@
         }
     }
 }
+
+
+@media screen and (max-width:400px){
+    .nosotros-container{
+        .nosotros-hero{
+            div{
+                h1{
+                    padding: 15px;
+                    font-size: 50px;
+                    span{
+                        font-size: 30px;
+                    }
+                }            
+            }
+        }
+    }
+}
+
+//PROYECTOS///PROYECTOS///PROYECTOS///PROYECTOS///PROYECTOS/
+
+@media screen and (max-width:990px){
+    .proyectos-container{
+        .encabezado{
+            nav{
+                div{
+                    a{
+                        img{
+                            height: 53px; 
+                            width: 200px;                        
+                        }
+                    }
+                    div{
+                        div{
+                            a{
+                                text-align: center;
+                                width:150px;
+                            }
+                        }
+                    }    
+                }
+            }
+        }
+        main{
+            h1{
+                font-size:80px;
+            }
+        }
+        .pie{
+            .ubicacion{
+                iframe{
+                    width: 150px;
+                    height: 150px;
+                }
+            }
+            .otro-contacto{
+                font-size: 15px;
+                line-height: 30px;
+            }
+            .redes{
+                i{
+                    font-size: 35px;
+                }
+            }
+        }
+    }    
+}
+
+@media screen and (max-width:700px){
+    .proyectos-container{
+        main{
+            h1{
+                padding:50px;
+                font-size:60px;
+            }
+            h2{
+                padding:60px;
+            }
+        }
+        .pie{
+            padding: 10px;  
+            flex-direction: column; 
+            .ubicacion{
+                display: none;
+            }
+            .otro-contacto{
+                font-size: 20px;
+                line-height: 20px;
+            }
+        }
+    }
+    }
+        
+
+
+@media screen and (max-width: 525px){
+    .proyectos-container{
+        main{
+            h1{
+                padding-left:0;
+                padding-right: 0;
+                font-size:50px;
+            }
+            div{
+                a{
+                    i{
+                        font-size:80px;
+                    }
+                }
+            }
+        }
+        .pie{
+            .otro-contacto{
+                font-size: 15px;
+                line-height: 30px;
+            }
+            .redes{
+                i{
+                    font-size: 50px;
+                }
+            }
+        }
+    }
+}
+
+//SERVICIOS///SERVICIOS///SERVICIOS///SERVICIOS///SERVICIOS///SERVICIOS/
+
+//ver "_Generales.scss" para la anidación del Grid/
+//anido aquí el header, footer y el h1/
+
+@media screen and (max-width:990){
+    //no funciona/
+    .servicios-container{    
+        main{        
+            h1{
+                font-size: 80px;   
+            }
+        }
+    }
+    
+}
+    
+
+    
+
+
+
+
 
 
     
