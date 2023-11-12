@@ -273,6 +273,13 @@
 
 @media screen and (max-width: 525px){
     .contacto-container{
+        main{
+            .formulario{
+                div{
+                    font-size: 15px;
+                }
+            }
+        }
         .pie{
             .otro-contacto{
                 font-size: 15px;

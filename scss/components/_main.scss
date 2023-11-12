@@ -15,13 +15,15 @@
     "contenido contenido servicios"
     "pie pie pie";
     .encabezado{
+        /**tenia un problema para desplegar el menu hamburguesa en el index*/
+        /**lo solucioné de esta forma*/
         top: 0;
         width: 100%;
     }
     .hero {
         grid-area: hero;
         width: 100%;
-        height: calc(100vh - 150px); //!acomodar height/
+        height: 100%; //!acomodar height/
 
         div{
             width: 100%;
@@ -34,6 +36,8 @@
                 color: #F1FAEE;
                 font-family: 'Source Code Pro', monospace;
                 font-size: 50px;
+                font-weight: 600;
+                font-style: italic;
                 letter-spacing: 2px;
                 text-align: center;
                 background-repeat: no-repeat;
@@ -43,6 +47,7 @@
                 text-shadow: -1px -1px 5px black;
                 span{
                     font-size:100px;
+                    font-style:normal;
                 }
             }
         }
@@ -124,8 +129,7 @@
     width: 90%;
     margin: 0 auto;  
     .nosotros-hero{
-        /* border: 2px solid #E63946; */
-        grid-area: hero;
+        margin-top:10px;
         width: 100%;
         height: 100%;
     
@@ -137,7 +141,8 @@
                 padding: 150px;
                 color: #F1FAEE;
                 font-family: 'Source Code Pro', monospace;
-                font-size: 120px;
+                font-size: 100px;
+                font-weight: 600;
                 letter-spacing: 2px;
                 text-align: center;
                 background-repeat: no-repeat;
@@ -146,8 +151,8 @@
                 background-attachment: fixed;    
                 text-shadow: -1px -1px 5px black;
                 span{
-                    font-size: 100px;
-                    //hay un elemento br
+                    font-style: italic;
+                    font-size: 80px;
                 }
             }
         }
@@ -199,13 +204,15 @@
         display: flex;
         flex-direction: column;  
         h1{
+            margin-top: 10px;
             background-image: url(../img/header-1-1920-700.jpg);
             width: 100%;
             height: 100%;
             padding: 150px;
             color: #F1FAEE;
             font-family: 'Source Code Pro', monospace;
-            font-size: 120px;
+            font-size: 100px;
+            font-weight: 600;
             letter-spacing: 2px;
             text-align: center;
             background-repeat: no-repeat;
@@ -233,13 +240,15 @@
         // height: 100vh; /
         // border: 2px solid #E63946; /
         h1{
+            margin-top:10px;
             background-image: url(../img/header-1-1920-700.jpg);
             width: 100%;
             height: 50%;
             padding: 150px;
             color: #F1FAEE;
             font-family: 'Source Code Pro', monospace;
-            font-size: 120px;
+            font-size: 100px;
+            font-weight:600;
             letter-spacing: 2px;
             text-align: center;
             background-repeat: no-repeat;
@@ -258,9 +267,11 @@
             border: 2px solid #E63946;
             display: flex;
             flex-direction: row;
+            background-color: #A8DADC;
             a{
                 i{
                     margin:30px;
+                    
                     font-size: 120px;
                     color: #E63946;
                     &:hover{
@@ -282,6 +293,7 @@
     flex-direction: column;
     main{
         .formulario{
+            
             display: flex;
             flex-direction: column;
             justify-content: space-around;
@@ -289,19 +301,40 @@
             h1{
                 font-family: 'Source Code Pro', monospace;
                 font-size: 50px;
+                font-weight: 600;
                 margin: 40px;
+                
             }
             div{
+                background-color: #A8DADC;
                 padding: 20px;
                 border:2px solid #E63946;
                 margin: 40px;
                 text-align: left;
+                font-size: 25px;
+                font-weight:500;
+                color: #E63946;
                 form{
                     label{
                         margin: 0;
                     }
                     input{
                         margin: 10px;
+                    }
+                    .submit{
+                        padding: 5px;
+                        border: 2px solid #E63946;
+                        color: #E63946;
+                        font-weight:600;
+                        text-shadow: -1px -1px 1px  #F1FAEE;
+                        background-color: #A8DADC;
+                        &:hover{
+                            background-color:#1D3557;
+                            text-shadow: -1px -1px 1px  #E63946;
+                            color: #F1FAEE;
+
+                        }
+
                     }
                 }
             }
