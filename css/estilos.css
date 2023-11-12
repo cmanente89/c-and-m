@@ -1,7 +1,7 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,300;0,600;0,900;1,300;1,600;1,900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&display=swap");
-.grid-container .hero div h1, .nosotros-container .nosotros-hero div h1, .servicios-container main h1 {
+.grid-container .hero div h1, .nosotros-container .nosotros-hero div h1, .servicios-container main h1, .proyectos-container main h1, .contacto-container main .formulario h1 {
   background-image: url(../img/header-1-1920-700.jpg);
   width: 100%;
   height: 100%;
@@ -42,17 +42,17 @@ body {
   font-size: 20px;
   font-weight: 600;
   border: 2px solid #E63946;
-  text-shadow: -1px -1px 1px  #F1FAEE;
+  text-shadow: -1px -1px 1px #F1FAEE;
   border-radius: 2%;
   background-color: #A8DADC; }
 
 .nav-link:hover {
   background-color: #1D3557;
-  text-shadow: -1px -1px 1px  #E63946;
+  text-shadow: -1px -1px 1px #E63946;
   color: #F1FAEE; }
 
 .navbar-nav {
-  --bs-nav-link-hover-color:#E63946; }
+  --bs-nav-link-hover-color:$color-1; }
 
 .servicios-main-grid {
   width: 100%;
@@ -65,11 +65,9 @@ body {
 .servicios-main-grid div {
   border: 2px solid #E63946;
   display: flex;
-  justify-content: space-evenly;
-  align-items: center;
   flex-direction: column;
   justify-content: center;
-  /*! no es lo que estaba buscando, sino text-align, pero me gusta como quedo*/
+  align-items: center;
   margin: 10px; }
 
 .servicios-main-grid div img {
@@ -134,9 +132,6 @@ body {
 .grid-container {
   background-color: #F1FAEE;
   width: 90%;
-  /*!si pongo 90% no queda centrado!!!*/
-  /**corregido*/
-  /**lo arreglé diviendo en 3 con fr en valores enteros*/
   margin: 0px auto;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -271,28 +266,12 @@ body {
     justify-content: space-around;
     align-items: center; }
     .proyectos-container main h1 {
-      margin-top: 10px;
-      background-image: url(../img/header-1-1920-700.jpg);
-      width: 100%;
-      height: 50%;
-      padding: 150px;
-      color: #F1FAEE;
-      font-family: 'Source Code Pro', monospace;
-      font-size: 100px;
-      font-weight: 600;
-      letter-spacing: 2px;
-      text-align: center;
-      background-repeat: no-repeat;
-      background-position: center;
-      background-size: cover;
-      background-attachment: fixed;
-      text-shadow: -1px -1px 5px black; }
+      margin-top: 10px; }
     .proyectos-container main h2 {
       padding: 50px 150px 0 150px;
       text-align: center; }
     .proyectos-container main div {
       margin: 50px 10px 150px 10px;
-      /* padding: 150px; */
       border: 2px solid #E63946;
       display: flex;
       flex-direction: row;
@@ -316,10 +295,7 @@ body {
     justify-content: space-around;
     align-items: center; }
     .contacto-container main .formulario h1 {
-      font-family: 'Source Code Pro', monospace;
-      font-size: 50px;
-      font-weight: 600;
-      margin: 40px; }
+      margin-top: 10px; }
     .contacto-container main .formulario div {
       background-color: #A8DADC;
       padding: 20px;
@@ -338,11 +314,11 @@ body {
         border: 2px solid #E63946;
         color: #E63946;
         font-weight: 600;
-        text-shadow: -1px -1px 1px  #F1FAEE;
+        text-shadow: -1px -1px 1px #F1FAEE;
         background-color: #A8DADC; }
         .contacto-container main .formulario div form .submit:hover {
           background-color: #1D3557;
-          text-shadow: -1px -1px 1px  #E63946;
+          text-shadow: -1px -1px 1px #E63946;
           color: #F1FAEE; }
 
 .pie {
@@ -485,6 +461,9 @@ body {
     font-size: 35px; } }
 
 @media screen and (max-width: 805px) {
+  .contacto-container main .formulario h1 {
+    font-size: 60px;
+    padding: 20px; }
   .contacto-container .pie {
     padding: 10px;
     flex-direction: column; }
@@ -495,6 +474,8 @@ body {
       line-height: 20px; } }
 
 @media screen and (max-width: 525px) {
+  .contacto-container main .formulario h1 {
+    font-size: 40px; }
   .contacto-container main .formulario div {
     font-size: 15px; }
   .contacto-container .pie .otro-contacto {

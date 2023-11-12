@@ -7,7 +7,7 @@
             div{
                 h1{
                     padding: 75px;
-                    color: #F1FAEE;
+                    color: $color-2;//!ver si esto va/
                     font-size: 40px;
                     letter-spacing: 2px;   
                     text-shadow: -1px -1px 5px black;
@@ -256,12 +256,19 @@
 
 @media screen and (max-width:805px){
     .contacto-container{
+        main{
+            .formulario{
+                h1{
+                    font-size: 60px;
+                    padding: 20px;
+                }
+            }
+        }
         .pie{
             padding: 10px;  
             flex-direction: column; 
             .ubicacion{
-                display: none;
-        
+                display: none;        
             }
             .otro-contacto{
                 font-size: 20px;
@@ -275,6 +282,9 @@
     .contacto-container{
         main{
             .formulario{
+                h1{
+                    font-size: 40px;
+                }
                 div{
                     font-size: 15px;
                 }

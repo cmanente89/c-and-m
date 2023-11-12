@@ -5,13 +5,16 @@ $color-2:#F1FAEE;
 $color-3:#A8DADC;
 $color-4:#1D3557;
 
+$borde: 2px solid #E63946;
+
 
 
 //LISTAS///LISTAS///LISTAS///LISTAS///LISTAS//
 //encontrar un mejor uso, este es poco práctico/
+
 $size: 10px, 20px, 30px, 40px, 50px, 60px, 70px, 80px, 90px, 100px, 110px, 120px;
 
-//EXTENDS/
+//EXTENDS///EXTENDS///EXTENDS///EXTENDS///EXTENDS///EXTENDS/
 
 %h1-hero{
     background-image: url(../img/header-1-1920-700.jpg);
@@ -31,4 +34,11 @@ $size: 10px, 20px, 30px, 40px, 50px, 60px, 70px, 80px, 90px, 100px, 110px, 120px
     text-shadow: -1px -1px 5px black;
 }
 
-//MIXINS/
+//MIXINS///MIXINS///MIXINS///MIXINS///MIXINS///MIXINS///MIXINS/
+
+@mixin flexbox ($flex, $direction, $justify, $align){
+    display: $flex;
+    flex-direction: $direction;
+    justify-content: $justify;
+    align-items: $align;
+}

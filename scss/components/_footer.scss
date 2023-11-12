@@ -1,27 +1,22 @@
 .pie {
-    background-color:#A8DADC;
+    background-color:$color-3;
     grid-area: pie;
     padding: 10px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
+    @include flexbox(flex, row, space-around, center);
     text-align: center;
     .otro-contacto{
         p{
             font-size: 20px;
             line-height: 50px;
-
         }
     }
-
     .redes{
         a{
             i{
                 font-size: 50px;
-                color: #E63946;
+                color: $color-1;
                 &:hover{
-                    color: #1D3557;
+                    color: $color-4;
                 }
             }
         }

@@ -19,15 +19,16 @@
 // BODY/// BODY/// BODY/// BODY/// BODY/
 
 body {
-    background-color: #F1FAEE;
+    background-color: $color-2;
     font-family: 'Roboto', sans-serif;
     
 }
 
 //HEADER///HEADER///HEADER///HEADER///HEADER///HEADER///HEADER/
+//Clases de Bootstrap/
 
 .navbar-brand img {
-    border: 2px solid #E63946;
+    border: $borde;
     
 }
 
@@ -35,34 +36,34 @@ body {
 .navbar-brand img:hover {
 
     content:url(../img/4.png);
-    border: 2px solid #E63946;
+    border: $borde;
     border-radius: 2%;
-    transition: 5s; //chequear si esto esta funcionando/
+    transition: 5s; //!chequear si esto esta funcionando/
 }
 
 
 .nav-link {
-    color: #E63946;
+    color: $color-1;
     margin: 10px;
     font-size: 20px;
     font-weight:600;
-    border: 2px solid #E63946;
-    text-shadow: -1px -1px 1px  #F1FAEE;
+    border: $borde;
+    text-shadow: -1px -1px 1px  $color-2;
     border-radius: 2%;
-    background-color: #A8DADC;
+    background-color: $color-3;
 }
 
 .nav-link:hover {
-    background-color:#1D3557;
-    text-shadow: -1px -1px 1px  #E63946;
-    color: #F1FAEE;
+    background-color:$color-4;
+    text-shadow: -1px -1px 1px  $color-1;
+    color: $color-2;
 }
 
 .navbar-nav {
-    --bs-nav-link-hover-color:#E63946;   
+    --bs-nav-link-hover-color:$color-1;   
 }
 
-//!GRILLA DE LA PAGINA "SERVICIOS.HTML (se rompe al anidar,/ 
+//!GRILLA DE LA PAGINA "servicios.html" (se rompe al anidar,/ 
 //!Gabi dijo en el after que podíamos hacerla sin anidar, igual sus respectivas media queries)/
 
 .servicios-main-grid {
@@ -77,12 +78,8 @@ body {
 
 
 .servicios-main-grid div{
-    border: 2px solid #E63946;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    flex-direction: column;
-    justify-content: center; /*! no es lo que estaba buscando, sino text-align, pero me gusta como quedo*/
+    border: $borde;
+    @include flexbox(flex, column, center, center);
     margin: 10px;
 }
 
@@ -107,20 +104,17 @@ body {
 @media screen and (max-width:1250px){
     .servicios-main-grid {
         width: 100%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;        
+        @include flexbox(flex, column, center, center);      
     }
     .servicios-main-grid div {
         border:0;
     }
     .servicios-main-grid .servicio-descripcion{
-        border: 2px solid #E63946;
+        border: $borde;
         width: 90%;        
     }
     .servicios-main-grid .servicio-imagen{
-        border:2px solid #E63946;        
+        border:$borde;        
         margin: 40px;
         width: 90%;
         padding: 20px;        
