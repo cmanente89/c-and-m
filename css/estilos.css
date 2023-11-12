@@ -2,7 +2,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,300;0,600;0,900;1,300;1,600;1,900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&display=swap");
 .grid-container .hero div h1, .nosotros-container .nosotros-hero div h1, .servicios-container main h1, .proyectos-container main h1, .contacto-container main .formulario h1 {
-  background-image: url(../img/header-1-1920-700.jpg);
+  background: linear-gradient(#e639473f, #f1faee36), url(../img/header-1-1920-700.jpg);
   width: 100%;
   height: 100%;
   padding: 150px;
@@ -16,7 +16,11 @@
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
-  text-shadow: -1px -1px 5px black; }
+  text-shadow: -1px -1px 5px black;
+  transition: all 1s ease-in 0.25s; }
+  .grid-container .hero div h1:hover, .nosotros-container .nosotros-hero div h1:hover, .servicios-container main h1:hover, .proyectos-container main h1:hover, .contacto-container main .formulario h1:hover {
+    border-radius: 10%;
+    border: 2px solid #1D3557; }
 
 * {
   margin: 0;
@@ -28,13 +32,14 @@ body {
   font-family: 'Roboto', sans-serif; }
 
 .navbar-brand img {
-  border: 2px solid #E63946; }
+  border: 2px solid #E63946;
+  transition-property: border-radius;
+  transition-duration: 0.25s; }
 
 .navbar-brand img:hover {
   content: url(../img/4.png);
   border: 2px solid #E63946;
-  border-radius: 2%;
-  transition: 5s; }
+  border-radius: 10%; }
 
 .nav-link {
   color: #E63946;
@@ -44,12 +49,15 @@ body {
   border: 2px solid #E63946;
   text-shadow: -1px -1px 1px #F1FAEE;
   border-radius: 2%;
-  background-color: #A8DADC; }
+  background-color: #A8DADC;
+  transition-property: all;
+  transition-duration: 0.25s; }
 
 .nav-link:hover {
   background-color: #1D3557;
   text-shadow: -1px -1px 1px #E63946;
-  color: #F1FAEE; }
+  color: #F1FAEE;
+  border-radius: 20%; }
 
 .navbar-nav {
   --bs-nav-link-hover-color:$color-1; }
@@ -72,7 +80,16 @@ body {
 
 .servicios-main-grid div img {
   height: 500px;
-  width: 500px; }
+  width: 500px;
+  box-shadow: -5px -4px 5px 0px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: -5px -4px 5px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: -5px -4px 5px 0px rgba(0, 0, 0, 0.75);
+  transition: 0.5s; }
+  .servicios-main-grid div img:hover {
+    transform: scale(0.99);
+    box-shadow: -2px -1px 2px 0px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: -2px -1px 2px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: -2px -1px 2px 0px rgba(0, 0, 0, 0.75); }
 
 .servicios-main-grid div h2 {
   font-size: 60px;
@@ -127,7 +144,8 @@ body {
   position: sticky;
   top: 0;
   width: 100%;
-  height: auto; }
+  height: auto;
+  z-index: 1; }
 
 .grid-container {
   background-color: #F1FAEE;
@@ -182,31 +200,60 @@ body {
         font-size: 30px;
         line-height: 50px;
         text-align: justify; }
+        .grid-container .contenido div p span {
+          font-style: italic;
+          font-weight: 500; }
+          .grid-container .contenido div p span a {
+            text-decoration: none;
+            color: black; }
+            .grid-container .contenido div p span a:hover {
+              text-decoration: underline; }
       .grid-container .contenido div img {
-        margin: 20px; }
-  .grid-container .servicios {
-    border: 2px solid #E63946;
-    background-color: #F1FAEE;
-    grid-area: servicios;
-    padding: 10px;
+        border: 2px solid #1D3557;
+        margin: 20px;
+        box-shadow: -5px -4px 5px 0px rgba(0, 0, 0, 0.75);
+        -webkit-box-shadow: -5px -4px 5px 0px rgba(0, 0, 0, 0.75);
+        -moz-box-shadow: -5px -4px 5px 0px rgba(0, 0, 0, 0.75);
+        transition: 0.5s; }
+        .grid-container .contenido div img:hover {
+          transform: scale(0.99);
+          box-shadow: -2px -1px 2px 0px rgba(0, 0, 0, 0.75);
+          -webkit-box-shadow: -2px -1px 2px 0px rgba(0, 0, 0, 0.75);
+          -moz-box-shadow: -2px -1px 2px 0px rgba(0, 0, 0, 0.75); }
+
+.servicios {
+  border: 2px solid #E63946;
+  background-color: #F1FAEE;
+  grid-area: servicios;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: end; }
+  .servicios div {
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
-    align-items: end; }
-    .grid-container .servicios div {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      text-align: center; }
-      .grid-container .servicios div h3 {
-        margin: 20px 5px 20px 5px;
-        font-size: 30px; }
-      .grid-container .servicios div img {
-        width: 300px;
-        height: 300px;
-        margin: 20px; }
-      .grid-container .servicios div p {
+    justify-content: center;
+    align-items: center;
+    text-align: center; }
+    .servicios div h3 {
+      margin: 20px 5px 20px 5px;
+      font-size: 30px; }
+    .servicios div img {
+      border: 2px solid #1D3557;
+      width: 300px;
+      height: 300px;
+      margin: 20px;
+      box-shadow: -5px -4px 5px 0px rgba(0, 0, 0, 0.75);
+      -webkit-box-shadow: -5px -4px 5px 0px rgba(0, 0, 0, 0.75);
+      -moz-box-shadow: -5px -4px 5px 0px rgba(0, 0, 0, 0.75);
+      transition: 0.5s; }
+      .servicios div img:hover {
+        transform: scale(0.99);
+        box-shadow: -2px -1px 2px 0px rgba(0, 0, 0, 0.75);
+        -webkit-box-shadow: -2px -1px 2px 0px rgba(0, 0, 0, 0.75);
+        -moz-box-shadow: -2px -1px 2px 0px rgba(0, 0, 0, 0.75); }
+      .servicios div img p {
         margin: 20px;
         font-size: 20px;
         text-align: justify; }
@@ -235,7 +282,20 @@ body {
       .nosotros-container .nosotros-main-container section img {
         padding: 20px;
         height: 400px;
-        width: 400px; }
+        width: 400px;
+        border: 2px solid #1D3557;
+        width: 300px;
+        height: 300px;
+        margin: 20px;
+        box-shadow: -5px -4px 5px 0px rgba(0, 0, 0, 0.75);
+        -webkit-box-shadow: -5px -4px 5px 0px rgba(0, 0, 0, 0.75);
+        -moz-box-shadow: -5px -4px 5px 0px rgba(0, 0, 0, 0.75);
+        transition: 0.5s; }
+        .nosotros-container .nosotros-main-container section img:hover {
+          transform: scale(0.99);
+          box-shadow: -2px -1px 2px 0px rgba(0, 0, 0, 0.75);
+          -webkit-box-shadow: -2px -1px 2px 0px rgba(0, 0, 0, 0.75);
+          -moz-box-shadow: -2px -1px 2px 0px rgba(0, 0, 0, 0.75); }
       .nosotros-container .nosotros-main-container section h2 {
         padding-top: 30px;
         font-size: 50px;
@@ -275,11 +335,18 @@ body {
       border: 2px solid #E63946;
       display: flex;
       flex-direction: row;
-      background-color: #A8DADC; }
+      background-color: #A8DADC;
+      transition-property: border-radius;
+      transition-duration: 1s;
+      transition-timing-function: ease-in;
+      transition-delay: 0.25s; }
+      .proyectos-container main div:hover {
+        border-radius: 20%; }
       .proyectos-container main div a i {
         margin: 30px;
         font-size: 120px;
-        color: #E63946; }
+        color: #E63946;
+        transition: 1s; }
         .proyectos-container main div a i:hover {
           color: #1D3557; }
 
@@ -297,14 +364,18 @@ body {
     .contacto-container main .formulario h1 {
       margin-top: 10px; }
     .contacto-container main .formulario div {
-      background-color: #A8DADC;
+      background: #457b9d;
+      background: linear-gradient(274deg, #457b9d 0%, #a8dadc 37%);
       padding: 20px;
       border: 2px solid #E63946;
       margin: 40px;
       text-align: left;
       font-size: 25px;
       font-weight: 500;
-      color: #E63946; }
+      color: #E63946;
+      transition: all 1s ease-in; }
+      .contacto-container main .formulario div:hover {
+        border-radius: 5%; }
       .contacto-container main .formulario div form label {
         margin: 0; }
       .contacto-container main .formulario div form input {
@@ -315,11 +386,14 @@ body {
         color: #E63946;
         font-weight: 600;
         text-shadow: -1px -1px 1px #F1FAEE;
-        background-color: #A8DADC; }
+        background-color: #A8DADC;
+        transition-property: all;
+        transition-duration: 0.25s; }
         .contacto-container main .formulario div form .submit:hover {
           background-color: #1D3557;
           text-shadow: -1px -1px 1px #E63946;
-          color: #F1FAEE; }
+          color: #F1FAEE;
+          border-radius: 20%; }
 
 .pie {
   background-color: #A8DADC;
@@ -335,7 +409,8 @@ body {
     line-height: 50px; }
   .pie .redes a i {
     font-size: 50px;
-    color: #E63946; }
+    color: #E63946;
+    transition: 0.25s; }
     .pie .redes a i:hover {
       color: #1D3557; }
 

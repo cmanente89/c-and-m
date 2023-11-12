@@ -29,16 +29,20 @@ body {
 
 .navbar-brand img {
     border: $borde;
+    transition-property: border-radius;
+    transition-duration: 0.25s;
     
 }
 
+//la propiedad content aparentemente no funciona bien con transition/
+//pero acomodando un poco los tiempos logré un resultado que más o menos me gusta/
+
 
 .navbar-brand img:hover {
-
-    content:url(../img/4.png);
+    content: url(../img/4.png);
     border: $borde;
-    border-radius: 2%;
-    transition: 5s; //!chequear si esto esta funcionando/
+    border-radius: 10%;
+    
 }
 
 
@@ -51,12 +55,15 @@ body {
     text-shadow: -1px -1px 1px  $color-2;
     border-radius: 2%;
     background-color: $color-3;
+    transition-property: all;
+    transition-duration: 0.25s;
 }
 
 .nav-link:hover {
     background-color:$color-4;
     text-shadow: -1px -1px 1px  $color-1;
     color: $color-2;
+    border-radius: 20%;
 }
 
 .navbar-nav {
@@ -86,6 +93,16 @@ body {
 .servicios-main-grid div img{
     height: 500px;
     width: 500px;
+    box-shadow: -5px -4px 5px 0px rgba(0,0,0,0.75);
+                -webkit-box-shadow: -5px -4px 5px 0px rgba(0,0,0,0.75);
+                -moz-box-shadow: -5px -4px 5px 0px rgba(0,0,0,0.75);
+                transition: 0.5s;
+                &:hover{
+                    transform: scale(0.99);
+                    box-shadow: -2px -1px 2px 0px rgba(0,0,0,0.75);
+                    -webkit-box-shadow: -2px -1px 2px 0px rgba(0,0,0,0.75);
+                    -moz-box-shadow: -2px -1px 2px 0px rgba(0,0,0,0.75);    
+                }
 }
 
 .servicios-main-grid div h2{
