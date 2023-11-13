@@ -142,14 +142,19 @@ body {
     .servicios-main-grid .servicio-descripcion h2{
         font-size:50px;
     }
+    .servicios-main-grid .servicio-imagen img{
+        width: 400px;
+        height: 400px;
+            
+    }
 }
 @media screen and (max-width:600px){
     .servicios-main-grid .servicio-descripcion h2{
         font-size:40px;
     }
     .servicios-main-grid .servicio-imagen img{
-        width:325px;
-        height: 325px;;
+        width:300px;
+        height: 300px;;
     }
 }
 @media screen and (max-width:550px){
@@ -158,8 +163,8 @@ body {
         
     }
     .servicios-main-grid .servicio-imagen img{
-        width:325px;
-        height: 325px;
+        width:240px;
+        height: 240px;
             
     }
 
