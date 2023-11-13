@@ -45,10 +45,12 @@
         text-align: center;
         
         h2{
+            color: $color-4;
             margin: 20px;
             padding: 30px;
             font-size: 70px;
             letter-spacing: 1px;
+            text-shadow: -5px -2px 2px rgba(230,57,70,0.56);
         }
         div{
             @include flexbox(flex, column-reverse, center, center);
@@ -101,8 +103,10 @@
             @include flexbox(flex, column, center, center);
             text-align: center;
             h3{
+                color: $color-4;
                 margin: 20px 5px 20px 5px;
                 font-size: 30px;
+                text-shadow:-2px -2px 2px rgba(230,57,70,0.56);
             }
             img{
                 border: $borde-2;
@@ -272,8 +276,7 @@
                 @extend %h1-hero;                
             }
             div{
-                background: rgb(69,123,157);
-                background: linear-gradient(274deg, rgba(69,123,157,1) 0%, rgba(168,218,220,1) 37%);
+                background: $color-3;
                 padding: 20px;
                 border: $borde;
                 margin: 40px;
