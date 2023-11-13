@@ -94,9 +94,13 @@ body {
 .servicios-main-grid div h2 {
   font-size: 60px;
   margin: 10px;
-  padding: 10px; }
+  padding: 10px;
+  color: #1D3557;
+  text-shadow: -3px -3px 2px rgba(230, 57, 70, 0.56); }
 
 .servicios-main-grid div p {
+  color: #1D3557;
+  font-weight: 500;
   padding: 50px;
   text-align: justify; }
 
@@ -192,7 +196,7 @@ body {
       padding: 30px;
       font-size: 70px;
       letter-spacing: 1px;
-      text-shadow: -5px -2px 2px rgba(230, 57, 70, 0.56); }
+      text-shadow: -3px -3px 2px rgba(230, 57, 70, 0.56); }
     .grid-container .contenido div {
       display: flex;
       flex-direction: column-reverse;
@@ -200,6 +204,7 @@ body {
       align-items: center;
       text-align: center; }
       .grid-container .contenido div p {
+        color: #1D3557;
         padding: 30px;
         margin: 20px;
         font-size: 30px;
@@ -210,7 +215,7 @@ body {
           font-weight: 500; }
           .grid-container .contenido div p span a {
             text-decoration: none;
-            color: black; }
+            color: #1D3557; }
             .grid-container .contenido div p span a:hover {
               text-decoration: underline; }
       .grid-container .contenido div img {
@@ -260,10 +265,12 @@ body {
         box-shadow: -2px -1px 2px 0px rgba(0, 0, 0, 0.75);
         -webkit-box-shadow: -2px -1px 2px 0px rgba(0, 0, 0, 0.75);
         -moz-box-shadow: -2px -1px 2px 0px rgba(0, 0, 0, 0.75); }
-      .servicios div img p {
-        margin: 20px;
-        font-size: 20px;
-        text-align: justify; }
+    .servicios div p {
+      margin: 20px;
+      font-size: 20px;
+      text-align: justify;
+      color: #1D3557;
+      font-weight: 500; }
 
 .nosotros-container {
   background-color: #F1FAEE;
@@ -306,11 +313,14 @@ body {
       .nosotros-container .nosotros-main-container section h2 {
         padding-top: 30px;
         font-size: 50px;
-        letter-spacing: 1px; }
+        letter-spacing: 1px;
+        color: #1D3557;
+        text-shadow: -3px -3px 2px rgba(230, 57, 70, 0.56); }
       .nosotros-container .nosotros-main-container section p {
         padding: 20px;
         font-size: 25px;
-        text-align: justify; }
+        text-align: justify;
+        color: #1D3557; }
 
 .servicios-container {
   background-color: #F1FAEE;
@@ -336,7 +346,9 @@ body {
       margin-top: 10px; }
     .proyectos-container main h2 {
       padding: 50px 150px 0 150px;
-      text-align: center; }
+      text-align: center;
+      color: #1D3557;
+      text-shadow: -1px -1px 1px rgba(230, 57, 70, 0.56); }
     .proyectos-container main div {
       margin: 50px 10px 150px 10px;
       border: 2px solid #E63946;
@@ -617,8 +629,8 @@ body {
     .nosotros-container .nosotros-hero div h1 span {
       font-size: 35px; }
   .nosotros-container .nosotros-main-container section img {
-    height: 150px;
-    width: 150x; }
+    height: 250px;
+    width: 250px; }
   .nosotros-container .nosotros-main-container section h2 {
     padding-top: 20px;
     font-size: 40px; }
