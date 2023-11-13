@@ -2,7 +2,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,300;0,600;0,900;1,300;1,600;1,900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&display=swap");
 .grid-container .hero div h1, .nosotros-container .nosotros-hero div h1, .servicios-container main h1, .proyectos-container main h1, .contacto-container main .formulario h1 {
-  background: linear-gradient(#e639473f, #f1faee36), url(../img/header-1-1920-700.jpg);
+  background: linear-gradient(#e6394718, #f1faee13), url(../img/header-1-1920-700.jpg);
   width: 100%;
   height: 100%;
   padding: 150px;
@@ -241,7 +241,7 @@ body {
     .servicios div h3 {
       color: #1D3557;
       margin: 20px 5px 20px 5px;
-      font-size: 30px;
+      font-size: 40px;
       text-shadow: -2px -2px 2px rgba(230, 57, 70, 0.56); }
     .servicios div img {
       border: 2px solid #1D3557;
