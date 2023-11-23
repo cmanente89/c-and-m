@@ -51,7 +51,8 @@ body {
   border-radius: 2%;
   background-color: #A8DADC;
   transition-property: all;
-  transition-duration: 0.25s; }
+  transition-duration: 0.25s;
+  text-align: center; }
 
 .nav-link:hover {
   background-color: #1D3557;
@@ -484,7 +485,7 @@ body {
 @media screen and (max-width: 805px) {
   .grid-container {
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 150px auto auto auto 300px;
+    grid-template-rows: auto auto auto auto 300px;
     gap: 5px;
     grid-template-areas: "header header" "hero hero"     "contenido contenido" "servicios servicios" "pie pie"; }
     .grid-container .hero div h1 {

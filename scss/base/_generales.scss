@@ -46,6 +46,8 @@ body {
 }
 
 
+
+
 .nav-link {
     color: $color-1;
     margin: 10px;
@@ -57,6 +59,8 @@ body {
     background-color: $color-3;
     transition-property: all;
     transition-duration: 0.25s;
+    // width: 120px;
+    text-align: center;
 }
 
 .nav-link:hover {
