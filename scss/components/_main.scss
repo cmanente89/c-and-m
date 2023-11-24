@@ -310,6 +310,9 @@
                     input{
                         margin: 10px;
                     }
+                    textarea {
+                        resize: none;
+                    }
                     .submit{
                         padding: 5px;
                         border: $borde;

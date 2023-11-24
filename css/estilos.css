@@ -399,6 +399,8 @@ body {
         margin: 0; }
       .contacto-container main .formulario div form input {
         margin: 10px; }
+      .contacto-container main .formulario div form textarea {
+        resize: none; }
       .contacto-container main .formulario div form .submit {
         padding: 5px;
         border: 2px solid #E63946;
